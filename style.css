@@ -1,0 +1,496 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tudo{
+    background-color: #1b1030;
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: 1fr;
+}
+
+body {
+    height: 300vh; /* Alterado para ocupar toda a altura da viewport */
+    background-color: #1b1030;
+}
+
+/* Centraliza e limita a largura da interface */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estilo do nome */
+.nome {
+    font-size: 40px;
+}
+
+/* Estrutura flexível para conteúdo */
+.flex {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+}
+
+.flex img {
+    max-width: 20%;
+    height: auto;
+    transition: 2s;
+}
+
+/* Efeitos de hover em links */
+header a {
+    color: rgba(255, 255, 255, 0.556);
+    text-decoration: none;
+    transition: 2s;
+}
+
+header a:hover {
+    color: rgba(255, 255, 255, 0.856);
+    transform: scale(1.5);
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 80px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+.texto{
+    width: 1000px;
+    height: 300px;
+    font-size: 40px;
+    float: left;
+    margin-left: 140px;
+
+}
+
+.
+
+/* Botão de HIRE ME */
+header .btn-HIRE-ME button {
+    border: 2px solid black;
+    margin: 20px 40px;
+    border-radius: 500px;
+    background-color: wheat;
+    color: blueviolet;
+    font-weight: 700;
+}
+
+header .btn-HIRE-ME button:hover {
+    box-shadow: 0px 0px 8px blueviolet;
+
+}
+
+/* Botão redondo */
+.round-button {
+    padding: 15px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: rgb(122, 43, 226);
+    color: white;
+    border: none;
+    border-radius: 65px;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+}
+
+/* Seção do topo do site */
+section.topo-do-site {
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.topo-do-site h1 {
+    color: rgba(255, 255, 255, 0.297);
+    font-size: 80px;
+    line-height: 40px;
+}
+
+.topo-do-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Animação de flutuação */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Configurações dos títulos */
+.titulos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titulo {
+    font-size: 29px;
+    text-align: center;
+}
+
+.serviços {
+    font-size: 100px;
+    color: white;
+}
+
+/* Estilo dos botões */
+.botoes {
+    font-size: 30px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Seção de qualidades */
+.qualidades {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 90px;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Altura do contêiner */
+    text-align: right; /* Centraliza o texto horizontalmente */
+    margin-right: 50px;
+    display: block;
+
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    font-size: 80px;
+}
+
+
+
+/* Retângulos interativos */
+.rectangle1, .rectangle2, .rectangle3, .rectangle4 {
+    width: 1000px;
+    height: 150px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+
+.retangulo4{
+    width: 400px;
+    height: 500px;
+    margin-top: 10px;
+}
+.rectangle4 {
+    width: 1000px;
+    height: 150px;
+    margin-top: 10px;
+    font-size: 30px;
+    
+}
+
+.rectangle1:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.rectangle2:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+.rectangle3:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.rectangle4:hover{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+
+
+
+.conteudoEsquerda4Titulo.conteudoEsquerda4Titulo{
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    float: left;
+}
+.conteudoEsquerda4{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.number4 {
+    width: 40px;
+    height: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 35px 40px;
+    border-radius: 1px;
+    display: flex;
+    justify-content: space-around;
+}
+.number4:hover{
+    background-color: blueviolet;
+}
+
+.title1, .title2, .title3, .title4 {
+    width: 450px;
+    font-size: 36px;
+    font-family: 'Arial Black';
+    margin-top: 20px;
+}
+.title1:hover{
+    background-color: #45267f;
+}
+
+.paragraph1, .paragraph2, .paragraph3, .paragraph4 {
+    width: 450px;
+    font-size: 18px;
+    font-family: Arial;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.qualidades{
+    justify-content: center
+}
+
+.roxo{
+    margin: 0;
+    color: #531abd;
+    font-size: 25pt;
+}
+
+.profissao{
+    color: white;
+    font-size: 30pt;
+}
+
+.pequeno{
+    color: white;
+    font-size: 15pt;
+}
+
+.caixadosquantros:hover{
+    background-color: #531abd;
+    color: white;
+
+}
+
+
+.direita{
+    width: 700px;
+    height: 1400px;
+    float: right;
+    margin-right: 100px;
+}
+
+.conteudoDireita4Titulo, .conteudoDireita4{
+    width: 900px;
+    height: 1100px;
+    font-size: 40pt;
+    float: left;
+}
+
+.conteudoDireita4Titulo{
+    display: flex;
+    align-items: center;
+    color: #531abd;
+}
+
+.conteudoDireita4{
+    margin-left: 50px;
+    margin-top: 4px;
+}
+
+.roxo{
+    margin: 0;
+    color: #531abd;
+    font-size: 25pt;
+}
+
+.profissao{
+    color: white;
+    font-size: 30pt;
+}
+
+.pequeno{
+    color: white;
+    font-size: 15pt;
+}
+
+/* Seção de skills */
+.skills {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    float: center;
+    
+}
+
+.titulo5{
+    justify-content: center;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    float: center;
+}
+.titulo6{
+    font-size: 60px;
+    float: center;
+    isplay: grid;
+    place-items: center;  /* Centraliza vertical e horizontalmente */
+    height: 100%;
+}
+.logo-container{
+    font-size: 80px;
+}
+
+.quadradosSkills {
+    width: 300px;
+    height: 300px;
+    font-size: 40px;
+
+    
+}
+
+/* Seção de blogs */
+.blogs {
+    width: 2000px;
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-image: url("");
+}
+
+/* Rodapé */
+.footer {
+    width: 2000px;
+    height: 450px;
+    background-color: #1b1030;
+}
+
+.direitosAutorais {
+    width: 2000px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 30pt;
+    color: #45267f;
+}
+
+
+form {
+    width: 300px;
+    margin-left: 0 auto;
+    border-radius: 50px;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    
+
+  }
+  
+  input[type="submit"] {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    
+  }
+  
+  input[type="submit"]:hover {
+    background-color: blueviolet;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  .titulos-container{
+    float: center;
+    
+    
+
+  }
+
+  
+.image-container{
+    display: flex;
+    gap: 70px; /* Espaço entre as imagens */
+    float: center;
+    margin-bottom: 80px;
+    justify-content: center;
+    display: flexbox;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
